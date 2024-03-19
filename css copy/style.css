@@ -1,0 +1,521 @@
+/* h1{
+    font-size: 35px;
+    font-weight: bolder;
+    margin: 10px;
+}
+h2{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+h3{
+    font-size: 23px;
+    background-color: #0d8fe5;
+}
+h4{
+    font-size: 23px;
+    background-color: #0d8fe5;
+    text-align: center;
+}
+body{
+    background-color: #f9a690;
+}
+p{
+    margin-left: 10px;
+}
+.skip{
+    overflow: hidden;
+    left: 45%;
+    position: absolute;
+    padding: 10px;
+    z-index: 100;
+    font-size: 24px;
+    opacity: 0;
+    background-color: #0868b9;
+}
+.skip:focus{
+    opacity: 1;
+    top: 0;
+    color: #ffffff;
+}
+.nav_bar a.active{
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+.nav_bar a{
+    margin-left: 0;
+    padding: 5px;
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+}
+nav{
+    position: relative;
+    overflow: hidden;
+    background-color: #c33a19;
+}
+.nav_bar a:hover{
+    font-weight: bold;
+}
+h3{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+    justify-items: center;
+}
+img{
+    border: 10px solid #c33a19;
+}
+video{
+    border: 10px solid #c33a19;
+}
+.introimage{
+    display: block;
+    border: 15px solid #0868b9;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+ul{
+    margin-left: 10px;
+}
+.info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
+ul{
+    list-style-type: circle;
+    margin-left: 20px;
+}
+ol li{
+    list-style-type: decimal-leading-zero;
+    margin: 0.5rem;
+    margin-left: 30px;
+}
+@media (prefers-reduced-motion: reduce) {
+    .gif{
+        display: none;
+    }
+  } */
+
+body{
+    background-color: #fdf0d5;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.title{
+    font-size: 40px;
+}
+h1{
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 10px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h2{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #669bbc;
+    margin-top: 20px;
+}
+.nav_bar a.active{
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+.nav_bar a{
+    margin-left: 0;
+    padding: 5px;
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #ffffff;
+}
+nav{
+    position: relative;
+    overflow: hidden;
+    background-color: #003049;
+}
+.nav_bar a:hover{
+    font-weight: bold;
+}
+.skip{
+    background-color: #669bbc;
+    left: 50%;
+    position: absolute;
+    padding: 10px;
+    transform: translate(-50%, -100%);
+    transition: transform 0.3s;
+    z-index: 100;
+    font: 24px;
+    color: black;
+    text-decoration: none;
+}
+.skip:focus{
+    transform: translate(-50%, 130%);
+}
+.pets_gallery{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+}
+.pets_gallery img{
+    display: block;
+    border: 10px solid #78000d;
+    margin: auto;
+    width: 50%;
+}
+.pets_gallery video{
+    border: 10px solid #78000d;
+    margin: auto;
+}
+.introimage{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+h3{
+    font-size: 23px;
+    text-align: center;
+    color: #c1121f;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+h4{
+    font-size: 23px;
+    text-align: center;
+    color: #c1121f;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.pets_likes ul{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.gen_info{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+footer{
+    display: grid;
+    grid-template-columns: repeat(2fr, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+    background-color: #003049;
+    margin-top: 20px;
+    padding: 5px;
+}
+footer p{
+    color: #ffffff;
+    font-size: 12px;
+}
+.footer_nav a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+}
+.footer_nav a.active{
+    font-weight: bolder;
+}
+.footer_nav a:hover{
+    font-weight: bolder;
+}
+.ingredients ul{
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.ingredients ul li{
+    margin-bottom: 5px;
+}
+.steps ol{
+    list-style-type: decimal;
+    padding-left: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.steps ol li{
+    margin-bottom: 10px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .gif{
+        display: none;
+    }
+  }
+/* iPad PORTRAIT */
+@media only screen and (min-width: 768px){
+    .skip{
+        background-color: #669bbc;
+        left: 50%;
+        position: absolute;
+        padding: 15px;
+        transform: translate(-50%, -100%);
+        transition: transform 0.3s;
+        z-index: 100;
+        font-size: 20px;
+        color: black;
+        text-decoration: none;
+    }
+    .skip:focus{
+        transform: translate(-50%, 130%);
+    }
+    .title{
+        font-size: 60px;
+    }
+    .nav_bar a{
+        margin-left: 0;
+        padding: 5px;
+        float: left;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #ffffff;
+    }
+    nav{
+        position: relative;
+        overflow: hidden;
+        background-color: #003049;
+    }
+    .nav_bar a:hover{
+        font-weight: bold;
+    }
+    h1{
+        font-size: 53px;
+    }
+    h2{
+        font-size: 33px;
+    }
+    h3{
+        font-size: 31px;
+    }
+    h4{
+        font-size: 31px;
+    }
+    .introimage{
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .gen_info{
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 20px;
+    }
+    .pets_gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 0%;
+        row-gap: 0%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .pets_gallery img{
+        display: block;
+        border: 10px solid #78000d;
+        margin: auto;
+        width: 70%;
+    }
+    .pets_gallery video{
+        display: block;
+        border: 10px solid #78000d;
+        margin: auto;
+        width: 70%;
+    }
+    .pets_likes ul li{
+        font-size: 20px;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: repeat(2fr, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 10px;
+        background-color: #003049;
+        margin-top: 20px;
+        padding: 5px;
+    }
+    footer p{
+        font-size: 20px;
+    }
+    .footer_nav a{
+        font-size: 24px;
+        text-align: center;
+    }
+    .ingredients ul{
+        list-style-type: disc;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .ingredients ul li{
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+    .steps ol{
+        list-style-type: decimal;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+    }
+    .steps ol li{
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+}
+/* iPad LANDSCAPE */
+@media only screen and (min-width: 1024px){
+    .title{
+        font-size: 80px;
+    }
+    .skip{
+        background-color: #669bbc;
+        left: 50%;
+        position: absolute;
+        padding: 20px;
+        transform: translate(-50%, -100%);
+        transition: transform 0.3s;
+        z-index: 100;
+        font-size: 30px;
+        color: black;
+        text-decoration: none;
+    }
+    .skip:focus{
+        transform: translate(-50%, 100%);
+    }
+    .nav_bar a{
+        margin-left: 0;
+        padding: 5px;
+        float: left;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #ffffff;
+    }
+    nav{
+        position: relative;
+        overflow: hidden;
+        background-color: #003049;
+    }
+    .nav_bar a:hover{
+        font-weight: bold;
+    }
+    h1{
+        font-size: 69px;
+    }
+    h2{
+        font-size: 39px;
+    }
+    h3{
+        font-size: 37px;
+    }
+    h4{
+        font-size: 37px;
+    }
+    .introimage{
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+    }
+    .gen_info{
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 25px;
+    }
+    .pets_gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 0%;
+        row-gap: 0%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .pets_gallery img{
+        display: block;
+        border: 10px solid #78000d;
+        margin: auto;
+        width: 90%;
+    }
+    .pets_gallery video{
+        display: block;
+        border: 10px solid #78000d;
+        margin: auto;
+        width: 90%;
+    }
+    .pets_likes ul li{
+        font-size: 25px;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: repeat(2fr, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 10px;
+        background-color: #003049;
+        margin-top: 20px;
+        padding: 20px;
+    }
+    footer p{
+        font-size: 25px;
+        margin-top: 15px;
+    }
+    .footer_nav a{
+        font-size: 29px;
+    }
+    .ingredients ul{
+        list-style-type: disc;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .ingredients ul li{
+        margin-bottom: 5px;
+        font-size: 25px;
+    }
+    .steps ol{
+        list-style-type: decimal;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+    }
+    .steps ol li{
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+}
